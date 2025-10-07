@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0082)https://app.allinyourmind.es/web/index.php?r=reportsfolder/createe2&cp=671&er=2076 -->
-<html lang="ES-es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
-body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
-</style>
+<html lang="ES-es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Aiym Panel :: AIYM YUC</title>
     <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
@@ -28,6 +26,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 <script src="../../../assets/accessibility.js.descarga"></script>    <link rel="stylesheet" href="../../../assets/demo.css">
     <link rel="stylesheet" href="../../../assets/alertif.min.css">
 
+    <link rel="stylesheet" href="ERGOESPIROMETRICO.css">
 </head>
 
 
@@ -428,114 +427,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 <input type="hidden" name="_csrf" value="_ckZi0oN-3qcszLMoCbxHkgkJIzMoYBiZN523ZVvw3uJ8HPzOVrMNMrqUZXsfphofRRz67nWyDtJkz-x3hr6GA==">
 <div class="col-sm-12 pleft-0">
 </div>
-<style>
-	.radio1{
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		cursor: pointer;
-	}
-	.selectRadio{
-		color:#fff;
-	}
-	.textoBlanco{
-		color: #fff;
-	}
-	.textoNegro{
-		color: #000;
-	}
-	.anchoR{
-		width:115px;
-	}
-	
-	.tblRegistroDatos{
-		border: solid 1px #1AACE3; padding: 5px;
-	}
-	.tblRegistroDatos tr td{
-		border: solid 1px #1AACE3; 
-		padding: 5px;
-		text-align: center;
-	}
-	.tblRegistroDatos tr td, .negritas{
-		font-weight: bold;
-	}
-	.tblRegistroDatos tr td input{
-		text-align: center;
-	}
-	.informeCorporal{
-		position:absolute; right:30px;
-	}
-	.divInformeCorporal, .paddingVerticalDivs{
-		padding: 5px;
-	}
-	.fondoInformCorporal{
-		background-color:#F2F5F7;
-		border-radius:5px;
-	}
-	.dtsEspirometricos tr td{
-		text-align: center;
-		padding: 5px;
-	}
-	.izquierda{
-		text-align: left;
-		font-weight: bold;
-	}
-	.fondoTitulo{
-		background-color:#F2F5F7;
-		padding: 5px;
-		color: #42A9E1;
-	}
-	.sinFondoTitulo{
-		padding: 5px;
-		color: #42A9E1;
-	}
-	.tituloGasto{
-		background-color:#F2F5F7;
-		border-radius:5px;
-		font-weight: bold;
-		padding: 5px;
-		font-size: 15px;
-		text-align: center;
-	}
-	.informeSubsecuente{
-		float: right;
-		width: 80px;
-		text-align: center;
-	}
-.highcharts-figure, .highcharts-data-table table {
-  min-width: 320px; 
-  max-width: 660px;
-  margin: 1em auto;
-}
 
-.highcharts-data-table table {
-	font-family: Verdana, sans-serif;
-	border-collapse: collapse;
-	border: 1px solid #EBEBEB;
-	margin: 10px auto;
-	text-align: center;
-	width: 100%;
-	max-width: 500px;
-}
-.highcharts-data-table caption {
-  padding: 1em 0;
-  font-size: 1.2em;
-  color: #555;
-}
-.highcharts-data-table th {
-	font-weight: 600;
-  padding: 0.5em;
-}
-.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
-  padding: 0.5em;
-}
-.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
-  background: #f8f8f8;
-}
-.highcharts-data-table tr:hover {
-  background: #f1f7ff;
-}
-</style>
 
 <div style="clear: both;"></div>
 
@@ -562,20 +454,20 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 					<div class="col-sm-1 float-left  pleft-0">
 					<img style="border-radius:18px; position:relative;" id="selectedImg1" width="80" height="80" src="../../../assets/f4600a4902d2492aab666a0359eb4c42.jpg">				</div>
 				<div class="col-sm-11 float-left pleft-0" id="divInformeMetabolico0" style="">
-					<strong>JOURDAN MENDIETA</strong>
+					<strong id="athlete-name-metabolico"></strong>
 					<br>
 					El presente informe sintetiza los resultados obtenidos en la prueba de Metabolismo de Reposo y en durante el Esfuerzo (en caso de hacerse). Se analizaron tanto el gasto energético en reposo (acostado/a durante 15 minutos), como el rango de intensidades en esfuerzo, con medición directa de intercambio gaseoso (VO<sub>2</sub> y VCO<sub>2</sub>). Todos estos datos son clave de cara a establecer pautas nutricionales de acuerdo a sus características. Por ello, para relativizar estas variables, se consideran valores de antropometría y composición corporal.					
 				</div>
 
 				<div class="col-sm-11 float-left pleft-0" id="divInformeEsfuerzo0" style="display: none;">
-					<strong>JOURDAN MENDIETA</strong>
+					<strong id="athlete-name-esfuerzo"></strong>
 					<br>
-					Con fecha 21 de Noviembre del 2024, se realizó un test de rendimiento con el/la Dr./Dra. , siendo el protocolo realizado el de AVANZADO. 				</div>
+					Con fecha <span id="fecha-prueba-esfuerzo"></span>, se realizó un test de rendimiento con el/la Dr./Dra. <span id="medico-nombre"></span>, siendo el protocolo realizado el de <span id="protocolo-nombre"></span>. 				</div>
 
 				<div class="col-sm-11 float-left pleft-0" id="divInformeDeportivo0" style="display: none;">
-					<strong>JOURDAN MENDIETA</strong>
+					<strong id="athlete-name-deportivo"></strong>
 					<br>
-					A partir de los datos en la prueba del 21 de Noviembre del 2024, hemos determinado unas intensidades personales para los diversos objetivos del entrenamiento. Estas referencias pueden ser matizadas conforme evolucione el programa y según se adapte al terreno real y condiciones de entrenamiento. A partir de ahora, utilice dichos rangos, lo cual será bastante fiable durante cierto tiempo, y posteriormente deben actualizarse. Para un mejor criterio de uso de estas variables en relación a la zona de esfuerzo, considere la siguiente explicación. Al final del informe observará su nivel de rendimiento en relación a la elite profesional en ese deporte y género. Esa comparación relativa también la puede hacer respecto a usted en sucesivas evaluaciones.				</div>
+					A partir de los datos en la prueba del <span id="fecha-prueba-deportivo"></span>, hemos determinado unas intensidades personales para los diversos objetivos del entrenamiento. Estas referencias pueden ser matizadas conforme evolucione el programa y según se adapte al terreno real y condiciones de entrenamiento. A partir de ahora, utilice dichos rangos, lo cual será bastante fiable durante cierto tiempo, y posteriormente deben actualizarse. Para un mejor criterio de uso de estas variables en relación a la zona de esfuerzo, considere la siguiente explicación. Al final del informe observará su nivel de rendimiento en relación a la elite profesional en ese deporte y género. Esa comparación relativa también la puede hacer respecto a usted en sucesivas evaluaciones.				</div>
 				</form></div>
 				
 		<!-- Evaluación de la Composición Corporal Metabolico1 - ->
@@ -590,37 +482,37 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 				<div class="col-sm-3 float-left pleft-0">
 					<strong>Comentario:</strong>
 					<br>
-					Su composición corporal es mejorable. Debe mantener su cantidad de tejido graso pero debe incrementar su masa muscular. 				</div>
+					<span id="comentario-composicion-corporal"></span>				</div>
 				<div class="col-sm-3 float-left  pleft-0">
 					<div class="divInformeCorporal fondoInformCorporal">
 					Peso Corporal (kg):
-						<label class="informeCorporal">63</label>
+						<label class="informeCorporal" id="peso-corporal"></label>
 					</div>
 					<div class="divInformeCorporal">
 					Estatura (cms):
-						<label class="informeCorporal">171</label>
+						<label class="informeCorporal" id="estatura"></label>
 					</div>
 					<div class="divInformeCorporal fondoInformCorporal">
 						IMC (kg/m2):
-						<label class="informeCorporal">21.5</label>
+						<label class="informeCorporal" id="imc"></label>
 					</div>
 				</div>
 				<div class="col-sm-3 float-left  pleft-0">
 					<div class="divInformeCorporal fondoInformCorporal">
 						% Grasa:
-						<label class="informeCorporal">12</label>
+						<label class="informeCorporal" id="porcentaje-grasa"></label>
 					</div>
 					<div class="divInformeCorporal">
 						% Músculo:
-						<label class="informeCorporal">40.0</label>
+						<label class="informeCorporal" id="porcentaje-musculo"></label>
 					</div>
 					<div class="divInformeCorporal fondoInformCorporal">
 					Peso Graso (kg):
-						<label class="informeCorporal">7.6</label>
+						<label class="informeCorporal" id="peso-graso"></label>
 					</div>
 					<div class="divInformeCorporal">
 					Peso Muscular (kg):
-						<label class="informeCorporal">25</label>
+						<label class="informeCorporal" id="peso-muscular"></label>
 					</div>
 				</div>
 			</div>
@@ -639,67 +531,67 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 				<div class="col-sm-3 float-left  pleft-0">
 					<div class="divInformeCorporal fondoInformCorporal">
 						VO<sub>2</sub> Promedio (mL/kg/min):
-						<label class="informeCorporal">3.5</label>
+						<label class="informeCorporal" id="vo2-promedio"></label>
 					</div>
 					<div class="divInformeCorporal">
 						FC Reposo (ppm):
-						<label class="informeCorporal">50</label>
+						<label class="informeCorporal" id="fc-reposo"></label>
 					</div>
 					<div class="divInformeCorporal fondoInformCorporal">
 						<span style="font-size:12px;">Gasto Diario Reposo (REE) kcal/día:</span>
-						<label class="informeCorporal">1750</label>
+						<label class="informeCorporal" id="gasto-diario-kcal"></label>
 					</div>
 					<div class="divInformeCorporal">
 						METs:
-						<label class="informeCorporal">1.00</label>
+						<label class="informeCorporal" id="mets"></label>
 					</div>
 					<div class="divInformeCorporal fondoInformCorporal">
 						METs Ajustados:
-						<label class="informeCorporal">1.00</label>
+						<label class="informeCorporal" id="mets-ajustados"></label>
 					</div>
 				</div>
 				<div class="col-sm-3 float-left  pleft-0">
 					<div class="divInformeCorporal fondoInformCorporal">
-						RQ:						<label class="informeCorporal">0.85</label>
+						RQ:						<label class="informeCorporal" id="rq"></label>
 					</div>
 					<div class="divInformeCorporal">
-						CHO (%):						<label class="informeCorporal">52</label>
+						CHO (%):						<label class="informeCorporal" id="cho-porcentaje"></label>
 					</div>
 					<div class="divInformeCorporal fondoInformCorporal">
 					Grasa (%):
-						<label class="informeCorporal">48</label>
+						<label class="informeCorporal" id="grasa-porcentaje"></label>
 					</div>
 					<div class="divInformeCorporal">
 						CHO (g/día):
-						<label class="informeCorporal">222</label>
+						<label class="informeCorporal" id="cho-gramos-dia"></label>
 					</div>
 					<div class="divInformeCorporal fondoInformCorporal">
 					Grasa (g/día):
-						<label class="informeCorporal">87</label>
+						<label class="informeCorporal" id="grasa-gramos-dia"></label>
 					</div>
 				</div>
 				<div class="col-sm-3 float-left  pleft-0">
 					<div class="divInformeCorporal fondoInformCorporal">
 						% Grasa esperada:
-						<label class="informeCorporal">12</label>
+						<label class="informeCorporal" id="grasa-esperada"></label>
 					</div>
 					<div class="divInformeCorporal">
 						% Muscular con peso ideal:
-						<label class="informeCorporal">39.7</label>
+						<label class="informeCorporal" id="muscular-peso-ideal"></label>
 					</div>
 					<div class="divInformeCorporal fondoInformCorporal">
 					Kg de Masa Grasa a perder:
 						
-						<label class="informeCorporal"></label>
+						<label class="informeCorporal" id="masa-grasa-perder"></label>
 					</div>
 					<div class="divInformeCorporal">
 					Peso ideal (kg):
-						<label class="informeCorporal">63.0</label>
+						<label class="informeCorporal" id="peso-ideal"></label>
 					</div>
 				</div>
 				<div class="col-sm-12 float-left  pleft-0" style="padding-top:30px; padding-left:30px;">
 					<strong>Comentario:</strong> 
-					Niveles de actividad metabólica dentro del estándar, considerando una composición corporal óptima a medio plazo.														</div>
+					<span id="comentario-gasto-energetico"></span>														</div>
 			</div>
 		</div>
 		<!-- fin Gasto Energético de Reposo Metabolico2 -->
@@ -723,197 +615,8 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 					METs "Reales" consideran su propio Gasto Energético en Reposo (GER), no respecto a 3.5mL/kg/min (dividen respecto a su GER) Las kcal/min a partir de Jeukendrup y Wallis (Int J Sports Med. 2005, S28 - S37) y Peronnet y Massicotte (Can J Sport Sci. 1991, 16: 23 - 29)					
 					<br> <br>
 					<table width="100%">
-						<tbody><tr>
-							<td style="background: #003a5d; font-weight:bold; font-size: 15px;color: #FFFFFF; text-align: center; padding-top: 10px; padding-bottom: 10px;">
-								<div>Zona</div>
-							</td>
-							<td colspan="2" style="background: #003a5d; font-weight:bold; font-size: 15px;color: #FFFFFF; text-align: center; padding-top: 10px; padding-bottom: 10px;">
-								<div>METS</div>
-							</td>
-							<td colspan="3" style="background: #003a5d; font-weight:bold; font-size: 15px;color: #FFFFFF; text-align: center; padding-top: 10px; padding-bottom: 10px;">
-								<div>kcal/min</div>
-							</td>
-							<td colspan="6" style="background: #003a5d; font-weight:bold; font-size: 15px;color: #FFFFFF; text-align: center; padding-top: 10px; padding-bottom: 10px;">
-								<div>
-									Contribución de energía								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="fondoTitulo" align="center">
-								#
-							</td>
-							<td class="fondoTitulo" align="center">
-								Reales							</td>
-							<td class="fondoTitulo" align="center">
-								Estándar							</td>
-							<td class="fondoTitulo" align="center">
-								(Total)
-							</td>
-							<td class="fondoTitulo" align="center">
-								(Grasa)
-							</td>
-							<td class="fondoTitulo" align="center">
-								(CHO)
-							</td>
-							<td class="fondoTitulo" align="center">
-								Grasa (%)
-							</td>
-							<td class="fondoTitulo" align="center">
-								CHO (%)
-							</td>
-							<td class="fondoTitulo" align="center">
-								Grasa (gr/h)
-							</td>
-							<td class="fondoTitulo" align="center">
-								CHO (gr/h)
-							</td>
-						</tr>
-						<tr>
-							<!-- ////////////////////////////////// -->
-							<td class="sinFondoTitulo" align="center">
-								1
-							</td>
-							<td class="sinFondoTitulo" align="center">
-								12.8															</td>
-							<td class="sinFondoTitulo" align="center">
-																12.8							</td>
-							<td class="sinFondoTitulo" align="center">
-								15.1							</td>
-							<td class="sinFondoTitulo" align="center">
-																5.0							</td>
-							<td class="sinFondoTitulo" align="center">
-								10.1							</td>
-							<td class="sinFondoTitulo" align="center">
-								33							</td>
-							<td class="sinFondoTitulo" align="center">
-								67							</td>
-							<td class="sinFondoTitulo" align="center">
-								31							</td>
-							<td class="sinFondoTitulo" align="center">
-								149							</td>
-
-						</tr>
-						<tr>
-							<td class="fondoTitulo" align="center">
-								2
-							</td>
-							<td class="fondoTitulo" align="center">
-								14.3							</td>
-							<td class="fondoTitulo" align="center">
-								14.3							</td>
-							<td class="fondoTitulo" align="center">
-								16.6							</td>
-							<td class="fondoTitulo" align="center">
-								5.2							</td>
-							<td class="fondoTitulo" align="center">
-								11.4							</td>
-							<td class="fondoTitulo" align="center">
-								31							</td>
-							<td class="fondoTitulo" align="center">
-								69							</td>
-							<td class="fondoTitulo" align="center">
-								31							</td>
-							<td class="fondoTitulo" align="center">
-								170							</td>
-						</tr>
-						<tr>
-							<td class="sinFondoTitulo" align="center">
-								3
-							</td>
-							<td class="sinFondoTitulo" align="center">
-								15.8							</td>
-							<td class="sinFondoTitulo" align="center">
-																15.8							</td>
-							<td class="sinFondoTitulo" align="center">
-								18.7							</td>
-							<td class="sinFondoTitulo" align="center">
-								2.9							</td>
-							<td class="sinFondoTitulo" align="center">
-								15.8							</td>
-							<td class="sinFondoTitulo" align="center">
-								16							</td>
-							<td class="sinFondoTitulo" align="center">
-								84							</td>
-							<td class="sinFondoTitulo" align="center">
-								15							</td>
-							<td class="sinFondoTitulo" align="center">
-								238							</td>
-						</tr>
-						<tr>
-
-							<td class="fondoTitulo" align="center">
-								4
-							</td>
-							<td class="fondoTitulo" align="center">
-								17.3							</td>
-							<td class="fondoTitulo" align="center">
-								17.3							</td>
-							<td class="fondoTitulo" align="center">
-								20.9							</td>
-							<td class="fondoTitulo" align="center">
-								0.0							</td>
-							<td class="fondoTitulo" align="center">
-								20.9							</td>
-							<td class="fondoTitulo" align="center">
-								0							</td>
-							<td class="fondoTitulo" align="center">
-								100							</td>
-							<td class="fondoTitulo" align="center">
-								0							</td>
-							<td class="fondoTitulo" align="center">
-								307							</td>
-						</tr>
-						<tr>
-
-							<td class="sinFondoTitulo" align="center">
-								5
-							</td>
-							<td class="sinFondoTitulo" align="center">
-								19.1							</td>
-							<td class="sinFondoTitulo" align="center">
-								19.1							</td>
-							<td class="sinFondoTitulo" align="center">
-								23.5							</td>
-							<td class="sinFondoTitulo" align="center">
-								0.0							</td>
-
-							<td class="sinFondoTitulo" align="center">
-								23.5							</td>
-							<td class="sinFondoTitulo" align="center">
-								0							</td>
-							<td class="sinFondoTitulo" align="center">
-								100							</td>
-							<td class="sinFondoTitulo" align="center">
-								0							</td>
-							<td class="sinFondoTitulo" align="center">
-								345							</td>
-						</tr>
-						<tr>
-
-							<td class="fondoTitulo" align="center">
-								6
-							</td>
-							<td class="fondoTitulo" align="center">
-								20.9							</td>
-							<td class="fondoTitulo" align="center">
-								20.9							</td>
-							<td class="fondoTitulo" align="center">
-								26.2							</td>
-							<td class="fondoTitulo" align="center">
-								0.0							</td>
-							<td class="fondoTitulo" align="center">
-								26.2							</td>
-							<td class="fondoTitulo" align="center">
-								0							</td>
-							<td class="fondoTitulo" align="center">
-								100							</td>
-							<td class="fondoTitulo" align="center">
-								0							</td>
-							<td class="fondoTitulo" align="center">
-								384							</td>
-						</tr>
-
-					</tbody></table>
+						<tbody>
+</tbody></table>
 				</div>
 				
 				<div style="clear: both;"></div>
@@ -1191,45 +894,8 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 					El cálculo de la eficiencia se realiza con la fórmula de Jeukendrup, Craig y Hawley (2000)				</div>
 				<div class="col-sm-6 float-left pleft-0">
 					<table width="100%" class="dtsEspirometricos">
-						<tbody><tr class="">
-							<td width="30%"> </td>
-							<td width="10%"> </td>
-							<td width="30%"><strong>% FC pico de la prueba</strong></td>
-							<td width="30%"><strong>% FC Máxima Teórica</strong></td>
-						</tr>
-						<!--<tr>
-							<td><div class="izquierda">FC max/pico (ppm):</div></td>
-							<td></td>
-							<td>100%</td>
-							<td>
-																99%</td>
-						</tr>-->
-						<tr class="fondoInformCorporal">
-							<td><div class="izquierda">FC 2do Umbral (ppm):</div></td>
-							<td>170</td>
-							<td>92%</td>
-							<td>91%</td>
-						</tr>
-						<tr>
-							<td><div class="izquierda">FC 1er Umbral (ppm):</div></td>
-							<td>153</td>
-							<td>
-																83%</td>
-							<td>82%</td>
-						</tr>
-						<tr class="fondoInformCorporal">
-							<td><div class="izquierda">FC en 1 min recuperación:</div></td>
-							<td></td>
-							<td>0%</td>
-							<td>0%</td>
-						</tr>
-						<tr>
-							<td><div class="izquierda">FC en 3 min recuperación:</div></td>
-							<td></td>
-							<td>0%</td>
-							<td>0%</td>
-						</tr>
-					</tbody></table>
+						<tbody>
+</tbody></table>
 				</div>
 				
 				<div style="clear: both;"></div>
@@ -1741,147 +1407,10 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 					            <!-- Deportivo 3 -->
 
             <table align="center">
-                <tbody><tr>
-                    <td align="left">
-                        <!--<img style="" height="50" src="require/img/blue-runner.png" />-->
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                    </td>
-                    <td align="left">
-                        <span style="background:#4ba3db;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;
-                    </td>
-					<td align="left">
-					Actual&nbsp;&nbsp;&nbsp;
-                    </td>
-					
-                    <td align="left">
-						                        <span style="background:#68869e;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;
-						                    </td>
-					<td align="left">
-						
-                                2022-07						&nbsp;&nbsp;
-                    </td>
-                    <td align="left">
-						                                <span style="background:#74ccfb;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;
-						                    </td>
-					<td align="left">
-						
-                                2022-07								
-                    </td>
-
-
-                </tr>
-            </tbody></table>
+                <tbody>
+</tbody></table>
 					<!--<img src="require/img/fotoRedonda.png">-->
-					<script>
-					Highcharts.chart('container', {
-					  chart: {
-						parallelCoordinates: true,
-						parallelAxes: {
-							gridLineWidth: 0,
-							lineWidth: 0,
-							showFirstLabel: false,
-							showLastLabel: true
-						},
-						polar: true,
-						BorderColor: '#000000',
-						BorderWidth: 0,
-						 backgroundColor: 'transparent',/**/
-						  lineColor: "rgba(138,221,45,0)",
-						lineWidth: 0,
-					  },
-
-					  title: {
-						text: ''
-					  },
-
-					  subtitle: {
-						text: ''
-					  },
-
-					  pane: {
-						startAngle: 0,
-						endAngle: 360,
-						  lineColor: "rgba(138,221,45,0)",
-						lineWidth: 0,
-					  },
-
-					  xAxis: {
-					    lineColor: "rgba(138,221,45,0)",
-						lineWidth: 0,
-						tickInterval: 72,
-						min: 0,
-						max: 360,
-						labels: {
-						  format: ' '
-						}
-					  },
-
-					  yAxis: {
-						min: 0,
-						  lineColor: "rgba(138,221,45,0)",
-						lineWidth: 0,
-						labels: {
-						  format: ' '
-						}
-					  },
-
-					  plotOptions: {
-						series: {
-						  pointStart: 0,
-						  pointInterval: 72
-						},
-						column: {
-						  pointPadding: 0,
-						  groupPadding: 0
-						},
-					  },
-
-					  series: [
-											{
-						type: 'line',
-						name: 2022,
-						  lineColor: "#68869e",
-						  lineWidth: 4,
-						marker: {
-						  enabled: true,
-						  lineColor: "#68869e",
-						  lineWidth: 3,
-						  fillColor: "#ffffff",
-						},
-						data: [6.5,7.3,7.1,6.6,5.1],
-						pointPlacement: 'on'
-					  },
-											{
-						type: 'line',
-						name: 2022,
-						  lineColor: "#74ccfb",
-						  lineWidth: 4,
-						marker: {
-						  enabled: true,
-						  lineColor: "#74ccfb",
-						  lineWidth: 3,
-						  fillColor: "#ffffff",
-						},
-						data: [7.2,7.2,7.4,7.7,9],
-						pointPlacement: 'on'
-					  }, 
-										{
-						type: 'line',
-						name: 'Actual',
-						  lineColor: "#2889A7",
-						  lineWidth: 4,
-						marker: {
-						  enabled: true,
-						  lineColor: "#2889A7",
-						  lineWidth: 3,
-						  fillColor: "#ffffff",
-						},
-						  data: [7.6,7.5,7,7,8.2,],
-						/*data: [2.3, 4, 3.7, 4, 8.1]/*data: [46, 16, 13.9, 11.8, 0.9]*/
-					  }
-						]
-					});
-					</script>
+					
 				</div>
 				<div class="col-sm-12 float-left pleft-0" style="margin-top:30px;">
 					<strong>Comentario</strong>
@@ -1917,149 +1446,12 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 </div>
 </div>	
  
-<script>
-$(document).ready(function(){
-	validaChk();
-	//alert($('.highcharts-grid-line').attr('stroke-width'));
-	$('.highcharts-grid-line').attr('stroke-width', '0');
-});
-	
-$(document).ready(function() {
-    $('.highcharts-a11y-proxy-button').hide();
-    $('.highcharts-credits').hide();
-    $('.highcharts-legend-item ').hide();
-    $('.highcharts-exporting-group').hide();
-    $('.highcharts-grid-line').hide();
-})
-function validaChk(){
-	$('#divDeporte1').addClass("btn-border");
-	$('#divDeporte2').addClass("btn-border");
-	$('#divDeporte3').addClass("btn-border");
-	$('#divTexto1').addClass("textoNegro");
-	$('#divTexto2').addClass("textoNegro");
-	$('#divTexto3').addClass("textoNegro");
-	$('#divInformeMetabolico0').hide();
-	$('#divInformeMetabolico1').hide();
-	$('#divInformeMetabolico2').hide();
-	$('#divInformeMetabolico3').hide();
-	$('#divInformeMetabolico4').hide();
-	$('#divInformeEsfuerzo0').hide();
-	$('#divInformeEsfuerzo1').hide();
-	$('#divInformeEsfuerzo2').hide();
-	$('#divInformeDeportivo0').hide();
-	$('#divInformeDeportivo1').hide();
-	$('#divInformeDeportivo2').hide();
-	$('#divInformeDeportivo3').hide();
-
-	if($("#reportsfolder-deporteID1").is(':checked')){
-		$('#divDeporte1').removeClass("btn-border");
-		$('#divTexto1').removeClass("textoNegro");
-		$('#divTexto1').addClass("textoBlanco");
-		$('#divInformeMetabolico0').show();
-		$('#divInformeMetabolico1').show();
-		$('#divInformeMetabolico2').show();
-		$('#divInformeMetabolico3').show();
-		$('#divInformeMetabolico4').show();
-	}
-	else if($("#reportsfolder-deporteID2").is(':checked')){
-		$('#divDeporte2').removeClass("btn-border");
-		$('#divTexto2').removeClass("textoNegro");
-		$('#divTexto2').addClass("textoBlanco");
-		$('#divInformeEsfuerzo0').show();
-		$('#divInformeEsfuerzo1').show();
-		$('#divInformeEsfuerzo2').show();
-	}
-	else if($("#reportsfolder-deporteID3").is(':checked')){
-		$('#divDeporte3').removeClass("btn-border");
-		$('#divTexto3').removeClass("textoNegro");
-		$('#divTexto3').addClass("textoBlanco");
-		$('#divInformeDeportivo0').show();
-		$('#divInformeDeportivo1').show();
-		$('#divInformeDeportivo2').show();
-		$('#divInformeDeportivo3').show();
-	}
-}
-	
-</script>.					</div>
+.					</div>
 				</div>
 			</div>
 		</div>
 </div>
-<script>
-$(document).ready(function(){
-	$("#pdfDownloader").click(function(){	
-		const btn = document.getElementById('pdfDownloader');
-		btn.textContent = 'Espere un momento...';
-		document.getElementById("pdfDownloader").disabled = true;
-		
-
-		let flag=1;
-		if($("#reportsfolder-deporteID1").is(':checked')){
-			flag=1;
-			html2canvas(document.querySelector("#tasamaxima")).then(canvas => {
-				//canvas:10,			
-			var imagedata = canvas.toDataURL('image/png');
-			var imgdata = imagedata.replace(/^data:image\/(png|jpeg);base64,/, "");
-					//ajax call to save image inside folder
-			$.ajax({
-					async:false,
-					url: '/web/index.php?r=reportsfolder/saveimg',
-					data: {
-						imgdata:imgdata, orden:'1', cp:'671', er:'2076'
-						},
-					type: 'post',
-					success: function (response) {   
-						console.log(response);
-						mandar(btn, flag);
-					}
-				});
-			});
-			
-		}
-		else if($("#reportsfolder-deporteID2").is(':checked')){
-			flag=2;
-			mandar(btn, flag);
-		}
-		else if($("#reportsfolder-deporteID3").is(':checked')){
-			flag=3;
-			html2canvas(document.querySelector("#graficas")).then(canvas => {
-				//canvas:10,			
-			var imagedata = canvas.toDataURL('image/png');
-			var imgdata = imagedata.replace(/^data:image\/(png|jpeg);base64,/, "");
-					//ajax call to save image inside folder
-			$.ajax({
-					async:false,
-					url: '/web/index.php?r=reportsfolder/saveimg',
-					data: {
-						imgdata:imgdata, orden:'0', cp:'671', er:'2076'
-						},
-					type: 'post',
-					success: function (response) {   
-						console.log(response);
-						mandar(btn, flag);
-					}
-				});
-			});
-		}
-		sleep(60).then(() => {
-			
-		});
-		$('#cols-det').removeClass('col-md-8').addClass('col-md-10');
-    });	
-	//$("#pdfDownloader").click();
-});	
-
-function mandar(btn, flag){
-	btn.textContent = 'Descargar PDF';
-			document.getElementById("pdfDownloader").disabled = false;
-			window.open('index.php?r=reportsfolder/savepdf&cp=671&er=2076&type=2&informe='+flag+'', '_blank');
-}
 	
-function sleep (time) {
-  return new Promise((resolve) => setTimeout(resolve, time));
-}
-
-</script>	
             </div>
         </div>
 
@@ -2097,25 +1489,12 @@ function sleep (time) {
 <script src="../../../assets/atlantis2.min.js.descarga"></script>
 <script src="../../../assets/yii.validation.js.descarga"></script>
 <script src="../../../assets/yii.activeForm.js.descarga"></script>
-<script>jQuery(function ($) {
-jQuery('#w0').yiiActiveForm([{"id":"reportsfolder-created_by_id","name":"created_by_id","container":".field-reportsfolder-created_by_id","input":"#reportsfolder-created_by_id","error":".help-block.errorHiden","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Created By ID debe ser un número entero.","skipOnEmpty":1});}},{"id":"reportsfolder-status","name":"status","container":".field-reportsfolder-status","input":"#reportsfolder-status","error":".help-block.errorHiden","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Estado no puede estar vacío."});yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Estado debe ser un número entero.","skipOnEmpty":1});}}], []);
-});</script>
+
 
 
 
 
 
 <script src="../../../assets/bootstrap-notify.min.js.descarga"></script>
-<script>
-function changeIdioma(id, flag) {
-    console.log(id + "-" + flag);
-    $.ajax({
-        url: '/web/index.php?r=idiomas/changeidioma',
-        type: "POST",
-        data: "id=" + id + "&flag=" + flag,
-        success: function(response) {
-            location.reload();
-        }
-    });
-}
-</script><div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"><div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div></div></body></html>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"><div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div></div>    <script src="ERGOESPIROMETRICO.js"></script>
+</body></html>
