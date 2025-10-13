@@ -1,0 +1,21 @@
+# Directorios de archivos antiguos
+*_AIYM_files/
+*_AIYM.html
+
+# Node modules (si se usan en el futuro)
+node_modules/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporales
+*.tmp
+*.bak
